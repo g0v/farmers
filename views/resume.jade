@@ -1,0 +1,101 @@
+extends _page
+
+block title
+  | 地瓜葉 2014 第一期
+
+block back
+  a.item(href="index.html")
+    i.icon.left.arrow
+
+block headline
+  .item 我的生產履歷 - 地瓜葉
+
+
+block content
+  section#resume(ng-controller="resume")
+    .picture
+      .ui.label.ribbon.status 未上市
+      img(src="")
+    .ui.icon.labeled.button.red#edit
+      i.icon.pencil
+      | 編輯
+    .info
+      #title: h1 地瓜葉
+        .statistics
+          .item
+            i.icon.star
+            | 12 人書籤
+          .item
+            i.icon.rss
+            | 3 人訂閱
+      .ui.two.column.stackable.grid
+        .column
+          .ui.divided.list
+            .item.duration
+              i.icon.empty.time
+              | 2014 第一期
+            .item.level
+              i.icon.certificate
+              | 無農藥無化肥
+            .item.latest
+              i.icon.bullhorn
+              | 第 2 次除蟲
+              .ui.label.teal.small 3 天前
+        .column
+          .ui.divided.list
+            .item.farmer
+              i.icon.user
+              | 鄭爺爺
+            .item.location
+              i.icon.location
+              | 新北烏來第 1 農場
+            .item.schedule
+              i.icon.calendar
+              | 預定 2014 年 3 月販售
+    //-.ui.four.steps.small
+      .ui.step.active.green 挖坑期
+        | 2014.1.1 - 
+      .ui.step.normal 拉坑期
+      .ui.step.disabled 填坑期
+      .ui.step.disabled 收割期
+    .ui.grid#updates
+      .row
+        .column
+          .ui.icon.labeled.button 新增日記
+            i.icon.add
+      .row
+        .column
+          .meta
+            h2 第 2 次除蟲
+            p 2014.1.1
+          .photo
+            .item
+            .item
+            .item
+            .item
+            .item
+            .item
+      .row
+        .column
+          .meta
+            h2 第 1 次施肥
+            p 2014.1.1
+          .photo
+            .item
+            .item
+            .item
+            .item
+            .item
+            .item
+      .row
+        .column
+          .meta
+            h2 第 1 次除蟲
+            p 2014.1.1
+          .photo
+            .item
+            .item
+            .item
+            .item
+            .item
+            .item

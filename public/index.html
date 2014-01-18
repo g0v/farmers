@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="小農故事">
+    <!-- libraries-->
+    <script type="text/javascript" src="assets/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/semantic-ui/0.9.5/css/semantic.min.css">
+    <script type="text/javascript" src="assets/semantic-ui/0.9.5/js/semantic.min.js"></script>
+    <!-- custom files-->
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>生產履歷 | 小農故事</title>
+  </head>
+  <body ng-app="farmers">
+    <div id="wrapper">
+      <nav id="navbar" class="ui menu borderless inverted">
+        <div class="item"><i class="icon leaf"></i>小農故事</div>
+        <div class="right menu">
+          <div class="ui dropdown item">鄭爺爺<i class="icon triangle down"></i>
+            <div class="menu"><a class="item">我的帳號</a><a class="item">設定</a><a class="item">登出</a></div>
+          </div>
+        </div>
+      </nav>
+      <section id="home" ng-controller="home">
+        <nav class="ui secondary pointing menu teal"><a ng-click="mode=all" class="item active">我的生產履歷</a><a ng-click="mode=producing" class="item">未上市</a><a ng-click="mode=selling" class="item">已上市</a><a ng-click="mode=archive" class="item">已售完</a>
+          <div class="right menu">
+            <div class="item ui icon labeled button green"><i class="icon add"></i>新履歷</div>
+          </div>
+        </nav>
+        <article id="list">
+          <div class="ui two column stackable grid"><a ng-show="mode==all" ng-href="" href="resume.html" class="column product">
+              <div class="ui segment card">
+                <div class="ui label ribbon status">未上市</div>
+                <div class="picture"><img src=""></div>
+                <div class="statistics">
+                  <div class="item bookmark"><i class="icon star"></i>
+                    <div class="text">10</div>
+                  </div>
+                  <div class="item subscribe"><i class="icon rss"></i>
+                    <div class="text">3</div>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">
+                    <h2>地瓜葉</h2>
+                  </div>
+                  <div class="ui divided list">
+                    <div class="item duration"><i class="icon empty time"></i>2014 第一期</div>
+                    <div class="item level"><i class="icon certificate"></i>無農藥無化肥</div>
+                    <div class="item latest"><i class="icon bullhorn"></i>第 2 次除蟲
+                      <div class="ui label teal small">3 天前</div>
+                    </div>
+                  </div>
+                </div>
+              </div></a><a ng-show="mode==all" ng-href="" href="resume.html" class="column product">
+              <div class="ui segment card">
+                <div class="ui label ribbon status">未上市</div>
+                <div class="picture"><img src=""></div>
+                <div class="statistics">
+                  <div class="item bookmark"><i class="icon star"></i>
+                    <div class="text">13</div>
+                  </div>
+                  <div class="item subscribe"><i class="icon rss"></i>
+                    <div class="text">9</div>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">
+                    <h2>油菜</h2>
+                  </div>
+                  <div class="ui divided list">
+                    <div class="item duration"><i class="icon empty time"></i>2014 第一期</div>
+                    <div class="item level"><i class="icon certificate"></i>台灣有機驗證</div>
+                    <div class="item latest"><i class="icon bullhorn"></i>第 1 次施肥
+                      <div class="ui label teal small">3 天前</div>
+                    </div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div id="script">
+    </div>
+  </body>
+</html>

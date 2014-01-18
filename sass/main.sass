@@ -1,0 +1,178 @@
+@import compass/css3
+
+// glabal
+
+html
+  font-size: 18px
+  font-family: '微軟正黑體', sans-serif
+  color: #333
+
+input::-webkit-input-placeholder
+  font-family: '微軟正黑體', sans-serif
+
+body
+  margin: 0
+  padding: 0
+
+h1,h2,h3,h4
+  margin: 0
+  padding: 0
+  line-height: 1em
+
+a
+  color: inherit
+  text-decoration: none
+
+p
+  line-height: 1.5em
+  letter-spacing: 0.1em
+
+.hidden
+  display: none
+
+.clearfix
+  clear: both
+
+.ui.menu
+  margin: 0
+
+.ui.ribbon.label
+  position: absolute
+  left: -1rem
+  z-index: 2
+
+.ui.steps
+  .step
+    padding-top: 0.8em
+    padding-bottom: 0.8em
+    &.disabled
+      &:after
+        top: 0.42em
+        width: 1.8em
+        height: 1.8em
+        right: -0.9em
+    &.normal
+      &:after
+        border: none
+        background-color: #FFFFFF
+        top: 0.42em
+        width: 1.8em
+        height: 1.8em
+        -webkit-transform: rotate(-45deg)
+        -ms-transform: rotate(-45deg)
+        transform: rotate(-45deg)
+        -webkit-box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0.1) inset
+        box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0.1) inset
+        right: -0.9em
+      &:hover:after
+        background-color: #F7F7F7
+    &.active
+      background-color: green
+      &:after
+        border-width: 1.3em
+        border-left-color: green
+        right: -1.2em
+
+//.ui.pointing.label
+  font-size: 0.8em
+  &.gray
+    background-color: #efefef
+    &:before
+      background-color: #efefef
+  &.light
+    background-color: #fafafa
+    &:before
+      background-color: #fafafa
+
+// layout
+
+#wrapper
+  width: 100%
+  max-width: 1024px
+  margin: 0 auto
+
+#navbar
+
+#list
+  margin: 1rem
+  .product
+    display: inline-block
+    .card
+      position: relative
+      min-height: 8rem
+      .status
+        position: absolute
+        left: -1rem
+        z-index: 2
+      .picture
+        width: 6rem
+        height: 6rem
+        position: absolute
+        border: 1px #ccc solid
+      .statistics
+        position: absolute
+        top: 7.5rem
+        font-size: 0.9rem
+        .item
+          display: inline-block
+          margin-right: 0.5rem
+          .text
+            font-size: 0.8rem
+            display: inline-block
+      .info
+        margin-left: 8rem
+  @media only screen and (max-width: 768px)
+    .ui.stackable.grid>.column
+      margin: 1rem!important
+      padding: 0!important
+
+
+#resume
+  margin: 1rem
+  position: relative
+  .picture
+    width: 8rem
+    height: 8rem
+    position: absolute
+    border: 1px #ccc solid
+  #edit
+    float: right
+  .info
+    margin-left: 10rem
+    #title
+      padding: 0.5rem 0
+    .statistics
+      display: inline
+      margin-left: 1rem
+      font-size: 0.9rem
+      font-weight: normal
+      .item
+        display: inline-block
+        margin-right: 1rem
+  #updates
+    margin-top: 2rem
+    .ui.button
+      width: 100%
+      border: 2px #ccc dashed
+      background: none
+    .meta
+      width: 8rem
+      height: 8rem
+      float: left
+    .photo
+      height: 8.2rem
+      overflow: hidden
+      .item
+        display: inline-block
+        width: 8rem
+        height: 8rem
+        margin-bottom: 1rem
+        border: 1px #ccc solid
+  @media only screen and (max-width: 768px)
+    .ui.stackable.grid>.column
+      margin: 0 0 0.5rem 0!important
+      padding: 0!important
+
+
+// content area
+

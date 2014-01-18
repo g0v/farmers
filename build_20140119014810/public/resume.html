@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="小農故事">
+    <!-- libraries-->
+    <script type="text/javascript" src="assets/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/semantic-ui/0.9.5/css/semantic.min.css">
+    <script type="text/javascript" src="assets/semantic-ui/0.9.5/js/semantic.min.js"></script>
+    <!-- custom files-->
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>地瓜葉 2014 第一期 | 小農故事</title>
+  </head>
+  <body ng-app="farmers">
+    <div id="wrapper">
+      <nav id="navbar" class="ui menu borderless inverted"><a href="index.html" class="item"><i class="icon left arrow"></i></a>
+        <div class="item">我的生產履歷 - 地瓜葉</div>
+        <div class="right menu">
+          <div class="ui dropdown item">鄭爺爺<i class="icon triangle down"></i>
+            <div class="menu"><a class="item">我的帳號</a><a class="item">設定</a><a class="item">登出</a></div>
+          </div>
+        </div>
+      </nav>
+      <section id="resume" ng-controller="resume">
+        <div class="picture">
+          <div class="ui label ribbon status">未上市</div><img src="">
+        </div>
+        <div id="edit" class="ui icon labeled button red"><i class="icon pencil"></i>編輯</div>
+        <div class="info">
+          <div id="title">
+            <h1>地瓜葉
+              <div class="statistics">
+                <div class="item"><i class="icon star"></i>12 人書籤</div>
+                <div class="item"><i class="icon rss"></i>3 人訂閱</div>
+              </div>
+            </h1>
+          </div>
+          <div class="ui two column stackable grid">
+            <div class="column">
+              <div class="ui divided list">
+                <div class="item duration"><i class="icon empty time"></i>2014 第一期</div>
+                <div class="item level"><i class="icon certificate"></i>無農藥無化肥</div>
+                <div class="item latest"><i class="icon bullhorn"></i>第 2 次除蟲
+                  <div class="ui label teal small">3 天前</div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="ui divided list">
+                <div class="item farmer"><i class="icon user"></i>鄭爺爺</div>
+                <div class="item location"><i class="icon location"></i>新北烏來第 1 農場</div>
+                <div class="item schedule"><i class="icon calendar"></i>預定 2014 年 3 月販售</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="updates" class="ui grid">
+          <div class="row">
+            <div class="column">
+              <div class="ui icon labeled button">新增日記<i class="icon add"></i></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="meta">
+                <h2>第 2 次除蟲</h2>
+                <p>2014.1.1</p>
+              </div>
+              <div class="photo">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="meta">
+                <h2>第 1 次施肥</h2>
+                <p>2014.1.1</p>
+              </div>
+              <div class="photo">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="meta">
+                <h2>第 1 次除蟲</h2>
+                <p>2014.1.1</p>
+              </div>
+              <div class="photo">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="script">
+    </div>
+  </body>
+</html>

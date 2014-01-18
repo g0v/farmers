@@ -1,0 +1,74 @@
+extends _page
+
+block title
+  | 生產履歷
+
+block headline
+  .item
+    i.icon.leaf
+    | 小農故事
+
+block content
+  section#home(ng-controller="home")
+    nav.ui.secondary.pointing.menu.teal
+      a.item.active(ng-click="mode=all") 我的生產履歷
+      a.item(ng-click="mode=producing") 未上市
+      a.item(ng-click="mode=selling") 已上市
+      a.item(ng-click="mode=archive") 已售完
+      .right.menu
+        .item.ui.icon.labeled.button.green
+          i.icon.add
+          | 新履歷
+    article#list
+      .ui.two.column.stackable.grid
+        //-.column(ng-repeat="product in products")
+        a.column.product(ng-show="mode==all",ng-href="",href="resume.html")
+          .ui.segment.card
+            .ui.label.ribbon.status 未上市
+            .picture
+              img(src="")
+            .statistics
+              .item.bookmark
+                i.icon.star
+                .text 10
+              .item.subscribe
+                i.icon.rss
+                .text 3
+            .info
+              .title: h2 地瓜葉
+              .ui.divided.list
+                .item.duration
+                  i.icon.empty.time
+                  | 2014 第一期
+                .item.level
+                  i.icon.certificate
+                  | 無農藥無化肥
+                .item.latest
+                  i.icon.bullhorn
+                  | 第 2 次除蟲
+                  .ui.label.teal.small 3 天前
+        a.column.product(ng-show="mode==all",ng-href="",href="resume.html")
+          .ui.segment.card
+            .ui.label.ribbon.status 未上市
+            .picture
+              img(src="")
+            .statistics
+              .item.bookmark
+                i.icon.star
+                .text 13
+              .item.subscribe
+                i.icon.rss
+                .text 9
+            .info
+              .title: h2 油菜
+              .ui.divided.list
+                .item.duration
+                  i.icon.empty.time
+                  | 2014 第一期
+                .item.level
+                  i.icon.certificate
+                  | 台灣有機驗證
+                .item.latest
+                  i.icon.bullhorn
+                  | 第 1 次施肥
+                  .ui.label.teal.small 3 天前
